@@ -1,0 +1,38 @@
+<!-- comment takeaways
+ Fiber is the reconciliation algorithm introduced in React 16.
+ 1 CR creates its own dom and then compare it with the web browsers dom and only update those components which are actually updated 
+ 2, but the brow removes the whole dom and then recreates the whole dom with the updated value this is call reload 
+ 3, however VD tracks whole dom like a tree like structure and update only those values which were only chnged 
+ 4, but sm val depnds on network call so if we update value it might get update immediately via a netwrk call.
+ 5, so we will have to update it again . to avoid this overhead we can drop the updation calls for the immediate value update 
+ 6, the current algo used by the react is called the react fibr algo
+ 7, the react algo uses to differentiate the web browser's tree and react tree formed through create root is called reconciliation 
+ 8, reconciliation is the algo bhnd what popularly known as the virtual dom 
+ 9, ui it is not necessary for everyy update to be applied immediately  -->
+<!-- 06 virtualDom, Fibre and Reconciliation
+once upon a time i feel cold and i went to the dr and dr give me medicine and also gv fvr mdcn i said i dont have fvr dr said im a dr appko raat mn fvr hoga adv mn , same like many people say i just do project in js and straight dive into next js to appko ye vdo lgega in which you will cover vD and fibre topc , agy ja k prhegi to abhi krlo , Vd not use in react now but we should study , borng hoga maybe lil monotonous but im not here to entertain you,  -->
+
+<!-- ye jo createRoot h ye bts akela kya km krta h , bts ye 1 pua dom like struct cret krta jaisa browser k pass hota , q k ye main dom ko or appny dom ko cmpr krta and then update unhi chzn ko jo ui mn update hui h, lkn appka browser pury dom ko remov krta or pury dom ko wps s repaint krta esi ko pg reload , esi ko pg reload bolty k dom pura ka pura str tyar horha esi liye jo loadng wala icon ata esi wja s k pura ka pura dom repaint horha repaint mtlb pura web str dobara tiyar horha h but in vd ap pura ka pura dom ko track krskty trc krskty tree like str mn or jo jo value chng hui srf usko dom s nikal k usko wps laga do , acha thk h smjh agaya k esi ko vd bolty js appna pur trck rkhta  1 vd tree bnata usmn chzn ko updt krta but suppose some elmnt depend on netwrk , ab appny kha ya jo dom h esmn 1 btn h jo update hoga uska text app updt krny h jarhy thy etny mn netwrk call s dobara update agya phir dobara s agya to ktni br updt hoga , to 2,3 br hogya lkn whn p agr mn 1,2 sec ruk jta ya optimize ya algorithm lga k ruk jata to mjhy intwmediate wala update nhkrna prta seedha thrd wala krdeta , hr ui ko instantly update krna zrori nh yae chz reactTeam k mnd mn ae thi , hoskta kch update ko meiny call krdiye ho usko mn drop krdn or new calls bhj do un calls ko ignore krdn to achi algortm design hoskti jo k ui updation ki ho , ui updation ki bt already krli hook mn, k kis trhn hook hoty jo 5 jaga ui ko update krny mn kaam aaty .
+ -->
+<!-- serch react fibre , github wala lyna now read article, react bts fibreAlgorithm h use krti h VD ko update krny k liye ,but VD h abhi bhi but usko update krny wali algorithm h fibre., hm pause krskty a bort krskty or new update ahy to kis ko priority dena h ye sab jisy hydration jisy concept bolty to ye sab,  first time p jb paint hota appka web elmnt to whn btns ajaty jo hydration concpt wo yae h k appky btns agahy imgs agahy but kisi p bhi click nh hota q k js abhi tk nh ae h to wb layout bn gya jb js injct hoti us process ko hydration bolty ab wo kam krny lgega ,    -->
+
+<!-- reconciliation react ki 1 algorithm h jo reconsider krti h kis ko udte krna kisko nh , kisko chk krna  -->
+
+<!-- recociliation algorithm diffentiation algorithm h , git bhi appka differnciation algortihm p h chlta kpuurani file mn or new file mn kya diff h to diff ,diffrnce ko update krdaingy hm , to react mn bhi fiffrenciation algorithm h jo 2 tress ko compre krta h, un 2 tree ko cmprekar k hm laty actual browsr wala tree jo dom hai or react wala jo khn s aya create root s 
+ update: setState mn jb hota to actually mn appka browser re-render krta  -->
+ <!-- react api mn developer kbhi bhi ye nh sochta k 1 state s mn dosri state mn kesy jaongor whn s thrd mn , state mtlb vari kaisy update hngy esky bry mn hm kbhi dhiyn h nh dety q k ye bts react ka km h , to react ki ye alg h sara km krti jb appny 15, s 16 kia you were never thn k how it would be render ,
+
+  most impor line,  reconciliation h wo algorithm h jisy bts sab vd bolty , algoritm h 2 trees ko cmpra krny ki 
+  
+  ye konsy tree h yaad h  meiny bataya th jsx mn app 1 obj bnaty ho ye woi tree ki bt kr rha jo app .render mtd lyty ussy wo sara obj ly k render envi mn jata h 
+  1 array h usy loop krna h or lana h list mn btn mn , parg mn khn bhi to whn 1 cncpt ata key q introduc krni chhye bina key k bhi react appko warning dega or sb whn p lga dega lakin q key use krni chye you know now , q k fibr jo new alg likhi thusmn agr list ki prfmnc ko improv krna h to hr 1 iteration p jo bhi ui , list etc app krrhy usy appko keys ka use krna h prega 
+  
+  fibre etni asan nh h , 
+  app ap jb bhi code krogy appko pata hoga k create root es trhn root krta , mera sara wrk vd mn jrha , aisy diffing kr rae algo whn s dom update horha -->
+
+<!--   
+lecture # 7 Tailwind and props in react.js| hooks to hmny prh lia k what responsibility they fulfilled bts VD kya h fibre kya h , ab props prhna or sth mn tailwind. react ka basic foundation alg h or adoos alg h i told you b4. routing , statemng adoons mn count krngy . tailwind install krty huey jo -d arha pkg.json mn jo apky pass devdepndencies h ye project build k kam ati 1 br project build hogaya to load nh deti appki appli ko appki app mn main bundle dependencies h hai jo sara kam krega  -->
+
+
+<!-- lecture 8 react interview question on counter
+ scenerio mn kha jata js portion khtm ab 1 react ki appli banado js mn 1 countr ho 1 btn hit incremnt 1 btn hid decrmnt, to jaisy counter pura krlia usky bd kya hota i tell you ,  -->

@@ -1,0 +1,237 @@
+<!-- 
+// react roadmap could be diff
+// why to learn React ?
+                //   hype, job , trwend , build UI
+                // makes easy to build and manage frontEnd
+
+// when should i learn React ?
+            //    After mastering js
+            // most project dont need react in initial phase 
+
+            // never be react developer , j.s developer thk h , or software developer bnogy to bht h thk h , all different . react ki comparatvly angular or viwe high h , ui bhi bnjaty but ui pehly bhi bn rhy thy we had jQuery javascript or css library bhi thi but react ki zroort khn p ae , ab kisi n 1 smple pg bnaya its my photo , detail contact linkn and ye meri profile ab ye kam ap html , js or css s bhi krskty thy agr app whn react use kr rhy to overkill kr rhy , listen appka jo react h wo Endofthe day compile hota htlm css or js mn or browser ko sirf html css js h smh ata appk rect ki library , modern ye smjh nh ata to react s build kr k bnny ka jo time h ,to whn koi sense nh react use krny k, jhn complex front end ho whn p react ko use krny ka sense h , jhn kfi chezn horawe 1 byn p clck krny s 3,4 jga update , easy mn bhi krskty . for interview complex frontend bnany hoty to kafi kam asan rdeta 
+            // jb small projrct h usy react ki need h nh 1 api hit karain api ka response aya cards mn data show krwaya ye kam js s bhi hskta th fetch api kitni strong h loop laga k krdety .
+            // why react was created ?
+            //  ye khani start hoti fb mn 1 problem thi fantum message problem meiny eska nm chnge ki ghost message prob , top p 1 cht icon tha jo new message aty thy uska count aajata th 3 ahy to 3 ajata 5 to 5, phir ap click krty thy 1 drop down opn hota th whn s open un medssge ko, DD mn bhi icon th es user n 3 bhejy esny 5 to appny opn kr k bt krli lkn ye icon ghyb h nh hota tha 1st wala 3,5 wala agr app dirctly cht mn ajty thy tb bhi rhta th ary bhae mny prh lia , 
+
+            // state -> js                        &                  UI -> DOM 
+        stat 1 fancy nam dia jata sry variables k liye , appka ye 1 mes aarha ye h khn p kisi variable mn state h vrbl ki wh 1msg dikhao , ab ye sari chzn js mn store rhti h, ab ui kon mng krta dom to , ab ye jo dom h or js ki state h enmn honi chahye bt , ab kabhi bhi en dono k bch mn nh horha th sync yhn s react hua start jo ye inconsistency thu ui mn , ye puri team ka kam h to 1 nam th dan kr k kuch khair inside enhn appreciation mili but outside k etni si prob k liye appny puri library bna di to kafi hate mila , react is th worsst implimentation of js library , khan academy or unsplash n adopt kia .
+
+        // dont learn react if 
+        //  -> you dnt know how js works or dom works, if you dnt knwo how js internally work how our execution in single thread , globl context kya hota execution context kya hota or dom ki bhi knowlege nh k kis trhn s pura tree bnta h 
+        //////////////////////////////////////////////////////////
+
+        // React learning Process // 1 time p 1 kr skty dono mn s 1 choose krna hogapehly to mn projct wali approach ly rha 
+        // go inDepth ->   babel, fibre , virtual dom , diff algorithm , hydration
+        //by mkng prjcts (one topic at a time)  -> todo , calculator, github Api
+
+        //React is a library
+        // frameWork   vs   Library
+        // framewrk ko mn bolta military or ibrry ko cooldood wo topi ulti sdhi lgty stylish jeans pehnty 
+
+        // frmewrk militry coz rules ka bra dhyan kya nming convention , esi fldr mn fle bnegi , esi nam s h or data esi trhn fectch hoga no exception , jango framewrk, next js frmwrk  , lbrry mn freedom ziada milti kaisy bhi km krny ki , cncpt km h.
+
+
+         topic to learn 
+        -> core of react (state or UI manipulation , JSX)  // react mn agr app dirctly koi variable chnge krdain to wo ui mn rflct nh krta h to kaisy krwana, JSX javascript m app html lkhty ho basics k liye etna kaafi h waisy to bht cmplx h .
+
+        -> component Reusability   // CR ab ye Cmpt Reus koi react ka propritory stuff nh essy phly bhi CR horae thi PHP k andr but rct m asan h , CR seekhty k btn ko kis trhn 10 jagah use krskty 1 br bana k , ya phir footer ya headers ko  kaisy ya crd ko bana k reuse or during CR app props learn, props means properties jaisy obj banaty whn key or value hn woi h
+
+
+         -> reusing of Component (props)   //to CR k during h app prop seekhty 
+
+
+        // -> how to propogate change (hooks)  //rect mn vr chng kia to ui mn rflct nh hoty to wo hoty hooks k through , kch hooks k thrg kch special treekon s bhi , ab useStatehook milega appko , use effect hook milega appko , 5 sy 7 hooks prh lain uska cncpt smjhna hoga phir khud smjh ajaega 
+        // bas yae mn react khtm hojati q k react core foundation etna h hai . react 1 library h . aksr lgn ko react k sath or bhi km seekhny hoty jaisy multi pg application , waisy to app yhn seekhogy react bata SPA single page appliction yai k page kbhi reload h nh hota appko to url chahye hiteshChoudry.//about / contct / profile to jb pg h reloasd nh horha to hm new url p kaisy jhn whn manipulation hota thora to usky liye hmn Router seekhna parhta , abrouter react ki functonlity nh h esky liye apko 1 additionl pkg install kerna prhta "react router dom" ab ye bhi naya library sekhna prh rha jaisy react library h , ab hm react k bad addon seekhna chty , 
+        // uper jitna h wo 7,6 video ki khani h bas routrt nh hota react mn to hm wo bhi sekkhty , phr dtatemang bhi seekhty , by default rect mn state mng nh tha abh h , 
+
+
+        //  Additional addon to React
+
+        //-> Rouer (react dont have router) 
+
+        // -> state mng (react dnt have state mngmnt)  to by default nh tha to es liye kch library ko introduce kia gya ye bhi appny app m stand alone library h , j.s ki library h react ki nh h , enmn s sbsy fmous librry h redox  , cntnt api bhi appko hooks h dyta js s state mng app easily krty 
+                //    -> redox, redux toolkit, zustand, context api
+
+
+    //  -> class based component // react jb start mn aya th to class based chahty thy .bind ka bht use krty thy khn khn 1% ya 1.5% legacy code h jo class based compont m chl rha if aisi compny h to bhg jh udha s , ag etna purana code UI ka bhi agr frontend ka bhi maintain horha to ghlt bt , react abhi ki date m pura funtiin base chl rha hooks etc sb fun 
+    //   -> legacy code
+
+
+    //  BAAS Apps   //backend as a service apny nam suna hoga famous nam h appWrite ka firebase ka superbase ka to ye appko dyty backend as a service ka ye org ya product appko direct bckend likhna nh prta app seedha h backed ko use krty , to app social media ki app drct bna lyty , react appk practice s ata to esky liye meiny 1 product bna rkha h freeApi.app to ye jo hmara product h open source ye bht kam ahega appky react seekhny k liye 
+    //      -> social media clone , e-commerce App.....
+
+
+    // ab react seekh lia to khnjana h q k roadmap h to usky bd ki choti si jourey to infact js seekhny k bad app drct backend mn switch krskty  k mjhy mza nh arha th ui mn mjhy bckend seekhna  , agr fronend mn maza arha h to react k bad app krskty to react na kbhi cmplt solution th na koi intention h bnny ka ,
+
+    //Alter React 
+    //  -> rec is not a cmplt solution in mostt case 
+    //       -> no seo , browser Render of Js , no routing   // react mn by default koi seo nh hota react s jo code genert hota to seo perspective s khrb hota whn h1 tags etc achy s genet nh hoty to serch ingine acy s nh prh paty , browser rendering ka 1 issue hota h js react k through  k sara code ship hota js ka , browser genert krta html or css ko to browser ko etna kam daingy to browser slow hoga , wbst bhi slow appear hogi althoug  basic applic mn wo fst h dikhta h usky elwa by default koi routing option nh h react ka to kch kamiyaan to h , unhn wo thk krna bhi nh chah rae to kch framewrk aarahy jaisy next js remoix , to app chahn to kahin bhi switch krskty , agr next js ka properly full use krna to whn p nextjs appko allow krta k app 1 frmewrk mn bckend bhi likhlo or forndend bhi 
+
+    // -> FrameWork
+    //    next js , Gatsby, Remix
+
+    second lecture
+
+
+
+     react or wbdvlpmnt koi platform dependnt nh hota widows ho mac ho lenix ho koi khs farq nh prta 1 editor chahye jhn code likh ln 1 rwser chhye jhn code run hojae . 
+    mein kya kya use krny wala , 1st code editor mn prsly vs code , agr app vim ya sublim to koi dikkatt wali bt nh , 2d cheez chahy node js q k hamara jo js hai wo run hota srf browser k andr h lkn node wo envirmnt dya , jaisy app phyton run krty python ka compiler install krlyty , waisy h js mn uska compiler install krlain node js wo usy execute krdega , ab exactly wrd h pkriyega k cmpiler nh interpritor hota , ab appny phly apna terminl open krna or seedha likhna h node-v esy appko node ka version ppata lg jaega , 2:50 . ab mera h 19.7 ab ye na lts hai na currnt dono k bch mn h koi feq nh parhta , 2nd chez chaye react ka documntation , react.dev p land kijiyega , usky elwa hmn chahye folder hm eska nam likh lyty chai-aur-react . ab appko bhi ye chahye hoga to 1 repository bna lyty . github.com/hiteshchoudry, ab hm new rpository bna lyty uska nam dyty simply chai-aur-react, description m chai aur react series on yutube obviously public h rkhngy esy or readme kch chahye nh to create kardyty , ab yhn hmn sary code mil gahy hm bhi esy h follow krlyty hm ab vs code fire krty mtlb start . ab chai-aur-react folder drag krfty ab ye commnds dykhty or chaladyty first command h . README.md ab app cho to dirct bhi bna skty ab mn esy close krdyta ho q k mjhy es trhn nh manually bnani h , to mn yhn readme.md ab es md file mn kch likh dety test h likh dety . -->
+    <!-- git init , ab git meiry systm mn install h configured bhi h es liye m direct meiry github account s bt kr paraha , to sari commnd use krlain then ab mein rfresh krnga github ko to hopefully meri readme file agae yn ab jitna bhi code likhnga appko mil jaega bas . ab documentation i prefer docmnttion for my students 
+    
+    ab mn launch krta ho to react.dev p learnReact p gahy then quick start then installation then then start a new project , usky bad show details mn gahy k without a framewrk use rna to andr ghy to vite or parcel s use krlain ye sb kya h 1 bundler h, ab bundler kya krta h app bht sari files mn js likhty us sbko combine kr k 1 basic file dydyta jis sy sara kam hojata
+    acha ab react 1 library h core , lkn react ki library k sath or bhi attachmnt milti h 1 h react-dom or 1 hai react-native
+    react ka krti esmn bht s cncpt h kis trhn app appliction bana skty ho , kis trhn rfrnces hold krskty ho , app 3 js mn animation wo sb bhi krskty lkn agr appko wbsite p kam krna to react ka kam h seedha react-dom s , agr mn mobile app bnaoga to react ki knowlege to kam ahegi lkn mn react-native k bry mn ziada prhnga or agr web p to react k sth dom lnga , ab esky sth kch script ati wo discuss krlngy .
+    now esny kha es trhn projct bana d . ab react k projct bna ny k 2no, 3no tareeky hndykhty hn ab sbsy phly terminal p aty to sbsy pehla or basic treeka h react bnany ka npx ab npx kya h to jb appny node install kia th to appky 1 pkg sth mn ata jisy khty node pkg manager npm ab npm kya krta jaisy phython k sath ata installer jo appko library install krny k liye allow krty  hr lnguge k sath aty, node k sth ata node pkg mngr to khn br app system mn install nh krna chahty dirctly h execute krna chhty to later on 1 addition aya th nodepkgexecuter npx ab bsc jo tareeka h wo h npx create-react-app , ab npx to h nodepkgExecuter or createReactApp h 1 utility , to utility kya h 1 software ab es softwre k through app new projct bna skty jaisy 01basicreact ,ab startng mn 01 h kya hmn allow krega naming convention mn to enter kia to
+     npx create-react-app 01basicreact (but ye krna nh h)
+    ab prob kya h dykhain ab app notice kijiyega mera systm bht fst h or internet speed bhi fast h takreeban 300 mb ki speed h acha mac studio h to apky systm mn or time lagega mn appko or tareeka bhi bataonga now a day woi use hota wo faster treeka h but ye b hona chye pata jb tk install hota meanwhile hm documntation dykh lyty ab dykhn enhn ny khn bhi es utility ka nam nh lia create react but ye fmous utillity h but ye bulky utility h bht si chzn aisi deti h jo appko chahye h nh to recomnd kia jata vite or parcel ye bhi utilities h ab yhn dcmnttion mn ye kh rhy grab react and react dom from npm set up your custom build process with a bundler like vite or parcel , cutom build process hi dykhngy hm , yhn enhn ny lga rkha h react ko app existing project mn bhi dal skty hn , developer tool bhi install  krskty ,typescript bhi use krskty  
+    ab hm chlty hn vs code p abhi hm mein folder mn h 01basicreact mn cd 01basicreact ,  ,   -->
+     <!-- cd 01basicreact (enter)
+     to ab jb mn es folder ko open krta to esm node modules h bht bara folder h to ab ye jo node k pkgs hain ya projct hai esy smjhty kasy hn to hmesha file open krain pkg.JSon , pkg.json h sbsy phla entry point , manta hn main entry point main funtion hota yhn pr bhi h , lkn en projcts mn prhny ka treeka hota h wo trkkea phly json mn jae or dukhn pkg ka nam kya h version kya h or dependencies kya h to meiny appko bataya th react h or react-dom h ye 2 h libraries h esky elwa enhn ny testing librries bhi d h test k through testing krn , hmn zrort nh thi dedi h , ab web-vitals kya h appki performn dykhta k kaisy appliction fst chl rae ya appko record krna track krna 
+     usky elawa scripts h ye scrips projct ko chlati h ya phr produvction k liye ready krti, jaisy start script h wo h developmnt env mn appky projct ko chlany k liye , build kya krta jb productin mn appki appliction jaati h to thora diff bhv krta , react jaisy k browser ko smjh nh ata to wo hm kaisy genrt krt wo build process s genert krty , test obvious si bt h agr appko sary test run krny to wo us trhn s , or eject 1 intersting cncpt h jhn app apni react s eject krlyty app appni appliction ko k bas mjhy etna h kam h to mn shyd kisi or frmewrk ya library ko introduce krnga , eslingconf h ye kahi bar appki red squickly line ajati k error bhi nh h lkn or bhtr krskty to linktin km aata , browserlist bhi h to konsy browser p km krnga konsy p nh , to productin m browser ki list hoti k chrome p chlega whn nh chlega. 
+
+
+     ab projct ko chlana kesy h dhiyn rkhiyega cd kr k app us project mn agahy hn , ab project chlanay k liye appko ye start script chlani prti h ab kaisychlty , terminal open ab agr app window p h to dir or mac ya liux p h ls. to appko ye package.json dikhna chahye agr ye agaya to start script chlaskty, ab start ka tareeka hota ya to app npm run bol skty ya direct npm start i recommnd hr chz ko run s q k strt mn exception hota to run mn app npm run build bhi chalaskty to, to consistncy ajati   to ab npm run start or fatak s browser mn open hogaya 
+      dir
+      npm run start 
+      ab right click kr k eska page source dykhty ,esmn to kch h h nh app dykhn pkg mn appky pass editsrc/app kafi kch h , but page source mn to cmt arha dicv root h bas to seo purpose s prob hoti h 
+
+      ab hm vs code mn jaty or npm run build bhi chla k dykh lyty to build chalya to build folder aagaya , chalaya nh build but build folder agya ab es build older mn kya h sary static assets jo bbhi chye thy j.s aagae chunk min sara ka sara to jitna js app n react mn likha tha wo yhn cnvrt hogaya , actully jb app build krty production m jb application dlaingy ye build folder h serve hota h users ko na k src folder , esy deploy bhi krngy bina kvch likhy h kr daingy . 
+      ab ye kam jo hua h wo hua jb hmny create react s 1 project bnaya lkn ab q k cre rct app acha treeka nh h q k bht bulky h or time bhi lyta h to ab use krngy hm vite , vite p bas click kr k chlty hn or get strted p jaty ab pehla cmd npm create vite@latest copy kia or project bnaty ab new termnal abhi mn hn project k root m file bnae 01basicreact , dhiyn rkhn mn projct k root mn hn to dir kia to folder dikha 01basicreact, ab vite k through react ka projct banhngy , q k react akeli library nh view bhi h swelt bhi . 
+      npm create vite@latest , //create utility h to h khair enter or then projct name dia 01vitereact phir kis fW k through to react  enter then js sy bnaya bas tiyr to npx s ye fst h npm eska abhi 1 or process h ab nodemodule folder yhn nh h to ye kaisy lahngy to woi pkg.json mn gahy , whn dependencies mn apko testing libraries bhi d jati thi scrip bhi wo hm dono libraries ko cmpre krngy k kya kya dffrnce h , dev dependencies kafi d jati dev depndencies kya hoti production mn nh jati , sirf developmnt mn use ati phir client k pass ye sb nh jata sirf kam hota h to bhi thk nh to bhi ab run kaisy , terminal saaf krn or esi flder mn 01vitereact then dir kia to pkg.json dikha to jb bhi nodemodule folder nh ho to app npm likhn or i bas jaisy kia enter to jo bhi pkg h wo install hngy appky pass . ab hm npm dev run krdaingy to local host p h project 24:30. ab hmny dykh lia kis trhn react mn project bnaya jarta or kis trhn vite mn -->
+
+       <!--acha ab app 01vite react mn most of the time app src mn h rhogy whn s sara kam ab yhn s file ko dlt krty .
+       core react projct ka bataya or react with vite 30;30 ab vite k sath bt kr rhy h sir ab sir n src mein sab dlt krwaya , acha yhn app.jsx h or main.jsx or coreReact project mn tha app.js or index.js dykha ye library h agr FW hota to yhn naming etni imp hoti k pura projct crash krjata  -->
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- lecture 3 understand the react flow and structure .
+       we compare create react project and with vite s jo projct banaya th , 1 br appko dono ka comrision or react ka flow smjh agya to usky bad app parcel s banahn vite s bnhn ya koi 3rd prty library ussy bhi bnhn structutre sm hoga goal ye  h k react haara html mn inject kaisy horha , react h kya end of the day js h to h js ki library h yani kch kam already react  mn horha h, koi kr haa h hmary liye lkn kuch na kch js s horha h , js ko kuch bhi kam k liye html mn inject hona parega to wo injection kis trhn horha kafi smjh ajega usky bd koi bhi projct mjhy do mjhy idea hoga k yhn s react aaraha h es trhn inject horha es point p or ye meri application tiyr horae , 2 resources bhi bataonga dono mn s koi bhi sponsor nh hai srf for generl knowlg k react k projct h khn br app colg mn ya mrkt mn to app un  WSites ka use kr k bna skty ab hr jagah possile nh k install krlain   -->
+       <!-- remembr js jb bhi akely chlti h to wo js h chlti h usu appko html mn lana h prega appko script call krni h hogi no exception until you put scipt tag in html or js ko nh laty koi cndition nh k appny app phnch jae or manipulation kr lain ye foundation h but ab dykhy jo bts horha h 
+       pkglock.json ye pkg.json h ki trh h but yhn appki dependencies lock hojarti h ye esi version p h chalega 
+       readme file to markdown file h basic introdvction ho na ho koi farq nh parhta 
+       to ab sara kam src folder mn horha h ya public fldr mn , publc folder mn manifest file h ye mobile devices k liye kam ati jb app appni appliction ko jo wbsite h mbl mn open krty to meta tags h wo khi br manifest file s dykhy jty to ye ho na ho koi frq nh , or rot.tst appky serch engine k liye to koi frq nh prta faq parta h index.html s q k yae main page h jo load hoga  or 1 h page h esy SPA bola jata single page application . 1 index file or esi mn sara kam hoga q k foundation to same h rhega na q k jitna bhi page mn elmnts ae ho  images ahi ho  , elmnt tag ahy , sliders ae ho dom h to la rha , jaisy hmny js mn dykha h th k dom manipulation s hm slider ko ghyb krskty btn hata skty laga skty , 1 page s dosry p kjaty to dom h to manipulate krta or nae painting bnanta  second page k liye contact us k liye 
+       index.html s sary cmnt dlt kiye or phir ye noscript tag derha k kya pata kisi browser mn js enable nh h to ap ye messag show krdo k enable krni hogi ,
+       sir n phly 01basic react ka bataya jo hmny create react s kia th or ab sir vite ka bata rhy hn to esmein dependencies mn to esny react script d h nh di to hmary html mn us react ki mein file h ya index h usy kon inject krega to enhn n index.html mn h script ko load krwalia to src mein main.jsx seedha h load ya inject. main.jsx mein react dom  1 createRoot kia or jb create react s kia tha us mein idex.js sy bhi unhn n createRoot same kaam kia 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+   yhn esny variable mn reference lia or next line mn kaha k 1 method lo .render 
+     
+       create react (index.js) -> const root = ReactDOM.createRoot(document.getElementById("root"));
+       root.render(
+            <App/>
+       );
+
+       ///////////////////////////////////////////////////////////////////////////////////
+
+       yhn seedha dot laga k .render , or reactstrictmode appko chahye rkhn na rkhn q k exact same kaam kr rhy ye thora light weight h q k react ki jo script etc arae h, testng library wo sb hatadi esny 
+       
+       react with vite (main.jsx) -> ReactDOM.createRoot(document.getElementById("root")).render (
+            <React.StrictMode>
+            <App/>
+            </React.StrictMode>,
+
+       )
+
+
+       ab chahy app react s , vite s ya ksi or s projct banao appko foundation pata h inner working pata cchl gae h , acha ab next ab 1 bt bathn agr app.jsx mein App agr 1 smple funtion h or return kr rha appki html or es fn ko appny dydia main.jsx ko render krny k liye , kya mn aisa 1 or bhi krskta? 1 fn h to bana js mn html return krni jb mein react appliction esko main mein krskti to kya mein usy app mn bhi krskta ho , to bnae 1 file nam dia chai.jsx q k vite ki kch configuration h k jb bhi app component banao to naam jsx h rkho or render krty huey uppercase filename mn nh render krty huey yani fun names uppercase, ab esmn mn 1 fun banty or usy export krty 
+       export default chai 
+       ab ye chai hm app.jsx or main.jsx mn bhej skty ab phly app.jsx mn bhejty or esmn s ye h1 hataty hn or or es </chai> ko ly ahy or import krain , jsx ka rule h app 1 h elemnt return krskty hn ab usko div banado or usmn bht s elmnt likhdo to br br div likhna to empty krdo to esy fragment bola gya react mn  , techniqually usny kha 1 elnt chahye hmny uski bt bhi rkhli or manipulate bhi krdia 
+       import Chai from "./chai"
+        <> 
+    <Chai/>
+    <h1>Chai aur react</h1>
+    <p>test</p>
+    </>
+
+    yae chz sir n ki h create react mn or woi restriction hai ye jo fun app export kr rhy hn hn jee yae componnts h , chahy vite s ya create s kam krn ye conventino d jaati h k ye jo funs h capitalize nam rkho or file mn jitny bhi app compont bna rhy yhn App ka nam capitalize h index nh h to achi prctice h esy bhi rename or capitalize chai to yhn main bhi small h lakin App capitlixe h vite mn 
+
+  
+  creat react mn agr koi html return horha h to uska nam jsx rkhty or agr sirf js ka code h koi html return nh horha to .js 
+  vite mn convention ye hota h k ziada tr file nam jsx default rkhiye ye library force kregi apko esky liye or capitl letter return 
+  ////////////////////////////////////////
+  create react mein batarhy
+  react etni bri librry h nh 1 script add krwani run kissy horae h 2  major chexn h jo k hmny pkg.json mn dykha 1 react or 1 reactdom enky andr s h method mil rhy, jo appka browser dom banata usi trhn 1 parallel dom yani puri memory mn 1 dom bana k rkhta wo dom khn s dykhny ko milra index.js s 
+
+
+       -->
+      <!-- lecture 4 Create your own react library and JSX -->
+       <!-- khud ka react bnahngy but not powerful like original  one coz usmn bht s alogorithm h jo chzn ko optimize krti h but atleast bear minimum basic version hoga jissy cncpt create hoga . under the hood smjh ahy , 2nd portion mn you move automatically in jsx , what or how , 
+        new folder and give name customReact and file index.html esmn sirf 1 div tha jiski id root or script load krdaingy custonreact.js  or 1 file name customreact.js   -->
